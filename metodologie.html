@@ -199,7 +199,7 @@ Pertanto, benché tali dati siano lontani dal rappresentare l’effettiva ricche
 La base di partenza è rappresentata dalla carta geobotanica sviluppata per il territorio regionale umbro nel 2018 per il progetto RERU3 che era stata realizzata con scala nominale pari a 1:10.000 con un dettaglio cartografico pari a circa un ettaro, ridotto a 2.000 metri quadrati per le formazioni boscate e a 5.000 metri quadrati per gli impianti di arboricoltura da legno, e una precisione pari a circa 5 m.</p>
 <p>L’importanza di disporre di una carta geobotanica e dell’uso del suolo dettagliata e aggiornata risiede nel suo valore strategico per molteplici ambiti di applicazione scientifica e gestionale.
 Dal punto di vista scientifico-ecologico riveste una notevole rilevanza poiché consente di valutare il grado di naturalità del territorio e conseguentemente anche l’identificazione dei pattern di biodiversità e delle aree di particolare valore naturalistico.
-Sul piano della pianificazione gestionale, disporre di una cartografia dettagliata e aggiornata che tenga conto della distribuzione spaziale delle comunità vegetali e delle infrastrutture antropiche facilita le analisi necessarie per l’applicazione delle norme ambientali, la valutazione degli impatti derivanti da interventi antropici e per orientare le scelte nella loro fase di pianificazione e progettazione.</p>
+Sul piano della pianificazione gestionale, disporre di una cartografia dettagliata e aggiornata che tenga conto della distribuzione spaziale delle comunità vegetali e delle infrastrutture antropiche facilita le analisi necessarie per: i) applicare le norme ambientali, ii) valutare degli impatti derivanti da interventi antropici e iii) orientare le scelte nella loro fase di pianificazione e progettazione.</p>
 <p>Nell’ambito dello studio in oggetto, questa carta è stata realizzata utilizzando il sistema di riferimento in coordinate piane EPSG:3035 (ETRS89-extended / LAEA Europe).
 Un contributo significativo all’aggiornamento di questa carta è stato dato dai volontari del servizio civile presso il Dipartimento 8 - Transizione ecologica economia circolare nel periodo 2024-2025.
 Non solo, per lo sviluppo della carta sono stati impegnati anche numerosi studenti delle scuole secondarie di secondo grado della città di Spoleto che nell’ambito delle loro attività PCTO con questa carta hanno testato le loro competenze in materia di software GIS e acquisito conoscenze pratiche nell’analisi territoriale, nella cartografia digitale e nelle metodologie di rilevamento ambientale.</p>
@@ -217,7 +217,7 @@ FRAGSTATS è infatti uno dei software più utilizzati nell’analisi del paesagg
 <ul>
 <li><strong>Land cover</strong>: è una metrica semplice, nota anche come area totale, identifica l’area totale coperta da ogni classe;</li>
 <li><strong>Landscape proportion (PLAND)</strong>: indica la percentuale dell’area di una classe rispetto all’area totale. È una misura importante in quanto permette di comprendere immediatamente quali sono le classi dominanti;</li>
-<li><strong>Number of patches (NP)</strong>: è una delle metriche più semplici e ci restituisce il numero totale di patches che compongono il paesaggio. NP = 1 quando siamo in presenza di una sola patch; quando siamo in presenza di habitat altamente frammentato e sottoposto a sprawl urbano il numero di patches è elevato.</li>
+<li><strong>Number of patches (NP)</strong>: è una delle metriche più semplici e ci restituisce il numero totale di patches che compongono il paesaggio. NP è uguale a 1 quando siamo in presenza di una sola patch; nel caso di habitat altamente frammentato e sottoposto a sprawl urbano, il numero di patches è elevato.</li>
 <li><strong>Mean patch area (MPA)</strong>: indica la dimensione media delle patch, più le patches delle varie classi hanno una dimensione simile più i valori si assomigliano. Qualora si presentassero evidenti differenze di valore significa che siamo di fronte a un territorio eterogeneo;</li>
 <li><strong>Edge density (ED)</strong>: è la lunghezza di tutti bordi di una classe in relazione all’area totale di ogni classe del paesaggio. Il valore è uguale a 0 se è presente una sola patch, e cresce all’aumentare della frammentazione del paesaggio;</li>
 <li><strong>Largest Patch Index (LPI)</strong>: è uguale all’area della patch più grande di ogni tipo di classe del suolo;</li>
@@ -232,11 +232,12 @@ Questo concetto quantifica la capacità di un habitat di fornire le risorse e le
 Nella pratica scientifica e gestionale, l’idoneità o “<em>habitat suitability</em>” viene spesso espressa attraverso modelli matematici che assegnano valori numerici (generalmente compresi tra 0 e 1, dove 0 indica completa inadeguatezza e 1 massima idoneità) a diverse porzioni del territorio.</p>
 <p>Nel caso in esame, la carta di idoneità è stata elaborata a titolo esplorativo sulla base delle esigenze biologiche ed ecologiche del set di specie di vertebrati precedentemente selezionati per l’elaborazione della rete ecologica regionale (cfr. RERU) e tenendo conto delle categorie di uso del suolo aggiornate nel contesto comunale con la carta geobotanica.
 Per la realizzazione di questa carta generale sono stati impiegati dei modelli geostatistici a massima entropia noti anche come <em>Species Distribution Models</em> (SDM) in grado di quantificare la vocazionalità territoriale sulla base delle categorie ambientali (cfr. Maxent <span class="citation">(<a href="#ref-gomesSpeciesDistributionModelling2018">Gomes et al. 2018</a>)</span>).
-Lo scopo finale di questi strumenti modellistici è quello di mappare e quantificare il potenziale biologico del territorio, fornendo una base scientifica per comprendere come le diverse aree possano supportare la presenza e gli spostamenti della fauna locale o per supportare i processi di pianificazione territoriale, soprattutto quelli mirati alla conservazione della biodiversità e alla valutazione degli impatti ambientali.</p>
+Lo scopo finale di questi strumenti modellistici è quello di mappare e quantificare il potenziale biologico del territorio, fornendo una base scientifica per comprendere come le diverse aree possano garantire la presenza e gli spostamenti della fauna locale o per supportare i processi di pianificazione territoriale, soprattutto quelli mirati alla conservazione della biodiversità e alla valutazione degli impatti ambientali.</p>
 </div>
 <div id="carta-della-permeabilità" class="section level3 hasAnchor" number="3.1.4">
 <h3><span class="header-section-number">3.1.4</span> Carta della permeabilità<a href="#carta-della-permeabilit%C3%A0" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Dopo aver valutato le potenzialità del territorio alla presenza delle specie è necessario trasformare questo valore in un indicatore più vicino alla realtà attraverso la valutazione degli elementi del territorio che possono influenzare la capacità di spostamento delle specie nel territorio.
+<p>Dopo aver valutato l’idoneità del territorio alla presenza delle specie è necessario trasformare questo valore in un indicatore più vicino alla realtà.
+Tale processo si può realizzare attraverso la valutazione degli elementi del territorio che possono influenzare la capacità di spostamento delle specie nel territorio.
 La distribuzione spaziale delle risorse nel paesaggio è infatti organizzata sotto forma di patch discrete e affinché il territorio sia caratterizzato da processi ecologici funzionali è necessario assicurare il movimento degli animali tra le diverse aree dove sono presenti tali risorse <span class="citation">(<a href="#ref-taylorConnectivityVitalElement1993">Taylor et al. 1993</a>)</span>.
 Alcuni elementi limitano o impediscono il passaggio della fauna da una zona all’altra, mentre altri agevolano la mobilità e il trasferimento degli individui delle popolazioni.
 Nel primo caso si parla di barriere (spesso codificate come infrastrutture grigie) mentre nel secondo caso di corridoi (infrastrutture verdi e blu).
@@ -255,18 +256,17 @@ Questo processo di disgregazione paesaggistica determina la trasformazione del t
 Associati a questo tipo di paesaggio ci sono diversi tipi di rischi che ne compromettono la funzionalità ecologica.
 A livello di popolazione, generalmente il processo di frammentazione aumenta il grado di vulnerabilità: popolazioni piccole e isolate sono infatti soggette a deriva genetica, perdita di variabilità genetica e depressione da inbreeding, tutti fenomeni che riducono la fitness individuale e la capacità di adattamento.
 Nei casi più severi comporta anche una riduzione dell’efficacia della dispersione, compromettendo la dinamica metapopolazionale e aumentando il rischio di estinzioni locali.
-Ulteriore fattore di rischio è inoltre, l’effetto margine che, attraverso l’incremento del rapporto perimetro/area delle patches, espone porzioni crescenti di habitat alle condizioni microclimatiche alterate dei margini.
-Alcuni esempi di questi effetti includono le modificazioni delle condizioni di luce, della temperatura, dell’umidità e della penetrazione del vento, che possono alterare in modo cruciale la composizione specifica, la struttura delle comunità biologiche e conseguentemente la loro capacità di fornire servizi ecosistemici essenziali.
+Un ulteriore fattore di rischio è l’effetto margine che, attraverso l’incremento del rapporto perimetro/area delle patches, espone porzioni crescenti di habitat alle condizioni microclimatiche alterate dei margini.
+Alcuni esempi dell’effetto margine includono: le modificazioni delle condizioni di luce, della temperatura, dell’umidità e della penetrazione del vento, che possono alterare in modo cruciale la composizione specifica, la struttura delle comunità biologiche e conseguentemente la loro capacità di fornire servizi ecosistemici essenziali.
 I principali motori di questa trasformazione sono rappresentati dai processi di urbanizzazione e dalla sottrazione di habitat naturali.
-In particolare, quelli che si manifestano attraverso varie modalità di sviluppo territoriale e dall’espansione della rete infrastrutturale.
-Associato al concetto della frammentazione c’è il suo complemento ovvero la connettività.
+Associato al concetto della frammentazione c’è quello della connettività.
 Questa è definita come “il grado in cui il paesaggio facilita il movimento di risorse tra le aree” e può essere misurata dalla probabilità di movimento tra tutti i punti o le aree di habitat in un paesaggio <span class="citation">(<a href="#ref-taylorConnectivityVitalElement1993">Taylor et al. 1993</a>)</span>.</p>
-<p>Per una prima valutazione del livello di frammentazione del territorio sono stati calcolati tre indici generali, che rappresentano misure complementari, ciascuna con specifiche proprietà e interpretazioni <span class="citation">(<a href="#ref-jaegerLandscapeDivisionSplitting2000">Jaeger 2000</a>)</span>.
-In particolare sono stati considerati, ripartendoli a livello di unità di paesaggio,: il landscape division, lo splitting index e l’effective mesh size.</p>
+<p>Per una prima valutazione del livello di frammentazione del territorio sono stati calcolati tre indici generali, che rappresentano misure complementari, ciascuna con specifiche proprietà e interpretazioni <span class="citation">(<a href="#ref-jaegerLandscapeDivisionSplitting2000">Jaeger 2000a</a>)</span>.
+In particolare sono stati considerati, ripartendoli a livello di unità di paesaggio: il landscape division, lo splitting index e l’effective mesh size.</p>
 <p>Il <em>landscape division</em> (divisione del paesaggio - D) è definito come la probabilità che due punti scelti casualmente all’interno del paesaggio non siano connessi a causa della frammentazione.
 Questo indice varia da 0 (paesaggio completamente connesso) a valori prossimi a 1 (paesaggio completamente frammentato).
 La divisione del paesaggio fornisce una misura intuitiva del grado di isolamento strutturale, quantificando la perdita di connettività dovuta alla presenza di barriere antropiche.
-Dal punti di vista matematico il calcolo di questo indice si basa sull’equazione:</p>
+Dal punto di vista matematico il calcolo di questo indice si basa sull’equazione:</p>
 <p><span class="math display">\[C=1-\sum_{i=1}^{n}(A_i/A_t)^2\]</span></p>
 <p>dove:</p>
 <ul>
@@ -302,7 +302,7 @@ Questo fenomeno, noto come “<em>boundary problem</em>”, può portare a valut
 Per superare questa limitazione alcuni autori <span class="citation">(<a href="#ref-moserModificationEffectiveMesh2007">Moser et al. 2007</a>)</span> hanno proposto il metodo Cross-Boundary Connections (CBC).
 Questo approccio affronta la limitazione includendo nell’analisi anche le aree esterne ai confini dell’unità di studio.
 L’approccio si basa su un principio fondamentale: considerare l’area completa di ogni patch (<span class="math inline">\(A^{cmpl}_i\)</span>), indipendentemente dai confini amministrativi o metodologici dell’area di indagine.</p>
-<p>Sulla base anche di quest’ultima variate metodologica sono state eseguite alcune valutazioni sulle unità di paesaggio e sull’intero territorio comunale considerando tutte le fasce altitudinali e la sola fascia del piano collinare compreso tra i 200 e i 400 m s.l.m.</p>
+<p>Sulla base anche di quest’ultima variante metodologica sono state eseguite alcune valutazioni sulle unità di paesaggio e sull’intero territorio comunale considerando tutte le fasce altitudinali e la sola fascia del piano collinare compreso tra i 200 e i 400 m s.l.m.</p>
 </div>
 <div id="morphological-spatial-pattern-analysis" class="section level3 hasAnchor" number="3.1.6">
 <h3><span class="header-section-number">3.1.6</span> Morphological Spatial Pattern Analysis<a href="metodologie.html#morphological-spatial-pattern-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -318,16 +318,16 @@ In quanto tale, può essere applicata a qualsiasi tipo di mappa raster di uso de
 Con questo approccio si ottiene un maggior numero di statistiche sugli elementi modellati e un risultato cartografico spazialmente esplicito che include i percorsi di connessione tra le aree core individuate nel modello del territorio.</p>
 <p>Nella configurazione di base per poter procedere con una modellazione devono essere settati 4 parametri:</p>
 <p>- <strong>connettività</strong> (foreground connectivity).
-Ci sono due possibili opzioni: una connettività a 8 celle, in cui a partire da una prima cella gli spostamenti sono consentiti in tutte le direzioni dello spazio, incluse diagonali e angoli; in alternativa si può utilizzare una connettività a 4 celle, in cui sono ammessi collegamenti soltanto per celle con un bordo in comune.</p>
-<p>- <strong>spessore del margine</strong> (edge width), in cui si definisce l’estensione dei margini delle aree core sotto forma di aree di buffer.</p>
-<p>- presenza (1) o assenza (0) di <strong>zone di transizione</strong> che attraversano le zone di margine.</p>
+Ci sono due possibili opzioni: una connettività a 8 celle, in cui a partire da una prima cella gli spostamenti sono consentiti in tutte le direzioni dello spazio, incluse diagonali e angoli; in alternativa si può utilizzare una connettività a 4 celle, in cui sono ammessi collegamenti soltanto per celle con un bordo in comune;</p>
+<p>- <strong>spessore del margine</strong> (edge width), in cui si definisce l’estensione dei margini delle aree core sotto forma di aree di buffer;</p>
+<p>- presenza (1) o assenza (0) di <strong>zone di transizione</strong> che attraversano le zone di margine;</p>
 <p>- intext (0,1), che permette di separare le <strong>porzioni esterne e interne</strong>, dove le caratteristiche interne sono quelle racchiuse da una perforazione.</p>
 </div>
 <div id="marxan" class="section level3 hasAnchor" number="3.1.7">
 <h3><span class="header-section-number">3.1.7</span> Marxan<a href="metodologie.html#marxan" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Per consolidare il sistema della rete ecologica tra gli strumenti che verranno impiegati dal software Marxan <span class="citation">(<a href="#ref-ardronMarxanGoodPractices2010">Ardron, Possingham, and Klein 2010</a>)</span>.
+<p>Tra gli strumenti che verranno impiegati per consolidare il sistema della rete ecologica c’è il software Marxan <span class="citation">(<a href="#ref-ardronMarxanGoodPractices2010">Ardron, Possingham, and Klein 2010</a>)</span>.
 Marxan è stato sviluppato per la progettazione di un sistema connesso di aree ad alta valenza naturalistica soddisfacendo il requisito di “minimo costo” in un complesso di scenari multipli.
-Nel contesto della progettazione il costo minimo può riferirsi a quell’insieme di valutazioni di natura ecologica, sociale ed economiche finalizzate a ottenere una rappresentazione minima delle caratteristiche della biodiversità con il minor costo possibile.
+Nel contesto della progettazione, il “minimo costo” può riferirsi a quell’insieme di valutazioni di natura ecologica, sociale ed economiche finalizzate a ottenere una rappresentazione minima delle caratteristiche della biodiversità con il minor costo possibile.
 La logica è che è più probabile che vengano mantenuti gli elementi della rete se questi si dimostrano essere i più economici o i meno socialmente dirompenti.
 Lo scopo dell’utilizzo di questo set di algoritmi risiede nell’importanza di supportare il processo decisionale e fornire un punto di partenza solido e riproducibile per le discussioni sulla pianificazione.
 I risultati finali dovranno poi essere perfezionati dai decisori che hanno il compito di considerare l’intera gamma di fattori politici, socio-economici e pratici che influenzano l’attuazione della pianificazione.</p>
@@ -347,7 +347,7 @@ Gann, George D., Tein McDonald, Bethanie Walder, James Aronson, Cara R. Nelson, 
 Gomes, Vitor H. F., Stéphanie D. IJff, Niels Raes, Iêda Leão Amaral, Rafael P. Salomão, Luiz de Souza Coelho, Francisca Dionízia de Almeida Matos, et al. 2018. <span>“Species Distribution Modelling: Contrasting Presence-Only Models with Plot Abundance Data.”</span> <em>Scientific Reports</em> 8 (1): 1003. <a href="https://doi.org/10.1038/s41598-017-18927-1">https://doi.org/10.1038/s41598-017-18927-1</a>.
 </div>
 <div id="ref-jaegerLandscapeDivisionSplitting2000" class="csl-entry">
-Jaeger, Jochen A. G. 2000. <span>“Landscape Division, Splitting Index, and Effective Mesh Size: New Measures of Landscape Fragmentation.”</span> <em>Landscape Ecology</em> 15 (2): 115–30. <a href="https://doi.org/10.1023/A:1008129329289">https://doi.org/10.1023/A:1008129329289</a>.
+Jaeger, Jochen A. G. 2000a. <span>“Landscape Division, Splitting Index, and Effective Mesh Size: New Measures of Landscape Fragmentation.”</span> <em>Landscape Ecology</em> 15 (2): 115–30. <a href="https://doi.org/10.1023/A:1008129329289">https://doi.org/10.1023/A:1008129329289</a>.
 </div>
 <div id="ref-lawrenceLandscapeFragmentationNatura2021" class="csl-entry">
 Lawrence, Alexandra, Fabian Friedrich, and Carl Beierkuhnlein. 2021. <span>“Landscape Fragmentation of the Natura 2000 Network and Its Surrounding Areas.”</span> Edited by Juliana Hipólito. <em>PLOS ONE</em> 16 (10): e0258615. <a href="https://doi.org/10.1371/journal.pone.0258615">https://doi.org/10.1371/journal.pone.0258615</a>.
