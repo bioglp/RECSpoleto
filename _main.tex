@@ -70,6 +70,10 @@
 \usepackage{booktabs}
 \usepackage{polyglossia}
 \setmainlanguage{italian}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\definecolor{washi}{RGB}{248, 243, 214}
+\pagecolor{washi}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -944,9 +948,7 @@ Patch cohesion index
 \end{longtable}
 
 \begin{figure}
-\centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragIndex2f}Plot degli Indici fragstats per Classe geobotanica. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragIndex2f-1.pdf}}
-\caption{\label{fig:fragIndex2f}Plot degli Indici fragstats per Classe geobotanica. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
+\includegraphics[width=\linewidth]{./figs/fragIndex2f} \caption{Plot degli Indici fragstats per Classe geobotanica. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}\label{fig:fragIndex2f}
 \end{figure}
 
 Limitando l'analisi alla sola unità di paesaggio urbano, risultante dalla combinazione delle Unità di Paesaggio San Carlo, dei Cappuccini, del Colle S.Elia, del Colle S. Tommaso, di Collerisana e della Valle Urbanizzata, il set di indicatori evidenzia che circa di 76\% del territorio è costituito da Aree urbanizzate (200) e Seminativi semplici (141), mentre se si esclude questa unità e si considerano solo le altre unità di paesaggio il 43\% della superficie è occupata dai boschi di caducifoglie (22) e il 24\% dai seminativi (141).
@@ -1101,15 +1103,11 @@ Mean patch area
 \end{longtable}
 
 \begin{figure}
-\centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragUrbano}Plot degli Indici fragstats per Classe geobotanica in Unità urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragUrbano-1.pdf}}
-\caption{\label{fig:fragUrbano}Plot degli Indici fragstats per Classe geobotanica in Unità urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
+\includegraphics[width=\linewidth]{./figs/fragUrbano} \caption{Plot degli Indici fragstats per Classe geobotanica in Unità urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}\label{fig:fragUrbano}
 \end{figure}
 
 \begin{figure}
-\centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragNoUrb}Plot degli Indici fragstats per Classe geobotanica nell'area non urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragNoUrb-1.pdf}}
-\caption{\label{fig:fragNoUrb}Plot degli Indici fragstats per Classe geobotanica nell'area non urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
+\includegraphics[width=\linewidth]{./figs/fragNoUrb} \caption{Plot degli Indici fragstats per Classe geobotanica nell'area non urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}\label{fig:fragNoUrb}
 \end{figure}
 
 Riassumendo gli indici di frammentazione del paesaggio e confrontando l'ambiente urbano (U) e quello non urbano (N), emergono alcuni particolari pattern (Tab. \ref{tab:fragComp}).
@@ -1419,9 +1417,7 @@ La relazione lineare inversa esistente tra gli indici di Splitting ed Effective 
 \ref{fig:plotSE}.
 
 \begin{figure}
-\centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:plotSE}Relazione tra Splitting index ed Effective Meshsize. Con i colori e le etichette di testo sono evidenziate le diverse classi geobotaniche.}]{_main_files/figure-latex/plotSE-1.pdf}}
-\caption{\label{fig:plotSE}Relazione tra Splitting index ed Effective Meshsize. Con i colori e le etichette di testo sono evidenziate le diverse classi geobotaniche.}
+\includegraphics[width=\linewidth]{./figs/plotSE} \caption{Relazione tra Splitting index ed Effective Meshsize. Con i colori e le etichette di testo sono evidenziate le diverse classi geobotaniche.}\label{fig:plotSE}
 \end{figure}
 
 \subsection{Morphological Spatial Pattern Analysis}\label{morphological-spatial-pattern-analysis-1}
