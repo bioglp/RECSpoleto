@@ -69,7 +69,7 @@
 \usepackage{polyglossia}
 \setmainlanguage{italian}
 \usepackage[]{natbib}
-\bibliographystyle{plainnat}
+\bibliographystyle{apalike}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -107,10 +107,11 @@ In questa relazione verranno pertanto analizzati i concetti fondamentali delle r
 
 L'obiettivo primario delle reti ecologiche è quello di consentire la
 mobilità delle specie e permettere lo scambio di individui e geni tra
-popolazioni che occupano aree di habitat tra loro spazialmente distinte.
+popolazioni che occupano aree di habitat tra loro spazialmente distinte
+\citep{battistiFrammentazioneAmbientaleConnettivita2004}.
 
 In linea generale, gli elementi essenziali che definiscono una rete
-ecologica anche a scala comunale possono essere schematizzati in:
+ecologica, anche a scala comunale, possono essere schematizzati in:
 
 \begin{itemize}
 \tightlist
@@ -166,14 +167,14 @@ ecologica, è necessario integrare l'analisi strutturale con indicatori
 ambientali e biologici. Ad esempio, l'analisi delle caratteristiche
 ambientali generali e degli habitat in particolare può essere fatta
 tramite la valutazione di due indici: il valore ecologico e la fragilità
-ambientale (Angelini et al., 2009). Con valore ecologico si intende la
-misura della qualità di un biotopo dal punto di vista ambientale, che
-viene valutato anche come ``valore naturale'' e calcolato attraverso
-l'utilizzo di specifici indicatori di pregio. Con fragilità ambientale
-si indica l'effettivo stato di vulnerabilità dal punto di vista
-naturalistico-ambientale. Tale indice è direttamente proporzionale alla
-predisposizione dell'unità ambientale al rischio di subire un danno e
-all'effettivo disturbo dovuto alla presenza delle attività umane che
+ambientale \citep{angeliniProgettoCartaNatura2009}. Con valore ecologico si
+intende la misura della qualità di un biotopo dal punto di vista
+ambientale, che viene valutato anche come ``valore naturale'' e calcolato
+attraverso l'utilizzo di specifici indicatori di pregio. Con fragilità
+ambientale si indica l'effettivo stato di vulnerabilità dal punto di
+vista naturalistico-ambientale. Tale indice è direttamente proporzionale
+alla predisposizione dell'unità ambientale al rischio di subire un danno
+e all'effettivo disturbo dovuto alla presenza delle attività umane che
 agiscono su di essa.
 
 Lo studio delle comunità presenti nel territorio prevede invece
@@ -182,20 +183,22 @@ specie selezionate. Per misurare la biodiversità è utile distinguere: -
 Ricchezza specifica: termine coniato da McIntosh nel 1967 che identifica
 il numero di specie presenti all'interno della comunità, in un'unità
 spaziale definita. - Evenness: esprime l'equipartizione di individui per
-le diverse specie appartenenti alla biocenosi (Magurran 2004).
+le diverse specie appartenenti alla biocenosi
+\citep{magurranMeasuringBiologicalDiversity2004, magurranMeasuringSpeciesDiversity2011}.
 
 A partire dalle misure di ricchezza specifica e dai dati di abbondanza è
 possibile sviluppare ulteriori indici di eterogeneità e di
 diversità/dominanza, quali gli indici di Gini, Shannon e Simpson
-(Magurran 2004), che ci aiutano a descrivere in modo più approfondito la
-struttura e la complessità delle comunità biologiche presenti sul
-territorio. Sulla base di queste informazioni è possibile definire il
-set di specie target che strategicamente saranno prese in considerazione
-durante la progettazione della rete. In linea generale, è consigliabile
-selezionare queste specie in base a: - Sensibilità al processo di
-frammentazione; - Facilità di campionamento; - Diffusione sul
-territorio, con preferenza per le specie a distribuzione relativamente
-ampia; - Stretto legame con gli ambienti di riferimento.
+\citep{magurranMeasuringBiologicalDiversity2004}, che ci aiutano a descrivere
+in modo più approfondito la struttura e la complessità delle comunità
+biologiche presenti sul territorio. Sulla base di queste informazioni è
+possibile definire il set di specie target che strategicamente saranno
+prese in considerazione durante la progettazione della rete. In linea
+generale, è consigliabile selezionare queste specie in base a: -
+Sensibilità al processo di frammentazione; - Facilità di
+campionamento; - Diffusione sul territorio, con preferenza per le specie
+a distribuzione relativamente ampia; - Stretto legame con gli ambienti
+di riferimento.
 
 In alternativa, è possibile prendere come riferimento organismi modello
 teorici, che racchiudono in sé alcune delle principali caratteristiche
@@ -304,7 +307,7 @@ Nell'ambito dello studio in oggetto, questa carta è stata realizzata utilizzand
 Un contributo significativo all'aggiornamento di questa carta è stato dato dai volontari del servizio civile presso il Dipartimento 8 - Transizione ecologica economia circolare nel periodo 2024-2025.
 Non solo, per lo sviluppo della carta sono stati impegnati anche numerosi studenti delle scuole secondarie di secondo grado della città di Spoleto che nell'ambito delle loro attività PCTO con questa carta hanno testato le loro competenze in materia di software GIS e acquisito conoscenze pratiche nell'analisi territoriale, nella cartografia digitale e nelle metodologie di rilevamento ambientale.
 
-Per descrivere le caratteristiche generali di questa carta sono state utilizzate metriche del paesaggio elaborate utilizzando il software FRAGSTATS (\url{https://www.fragstats.org}).
+Per descrivere le caratteristiche generali di questa carta sono state utilizzate metriche del paesaggio elaborate utilizzando il software FRAGSTATS (\url{https://www.fragstats.org})\citep{mcgarigalFragstatHelp2015}.
 Con questo software è possibile calcolare diversi indici spaziali che quantificano la composizione e la configurazione del paesaggio, permettendo di analizzare la frammentazione degli habitat, la connettività ecologica e la diversità strutturale del territorio analizzato.
 FRAGSTATS è infatti uno dei software più utilizzati nell'analisi del paesaggio per:
 
@@ -351,26 +354,26 @@ Questo concetto quantifica la capacità di un habitat di fornire le risorse e le
 Nella pratica scientifica e gestionale, l'idoneità o ``\emph{habitat suitability}'' viene spesso espressa attraverso modelli matematici che assegnano valori numerici (generalmente compresi tra 0 e 1, dove 0 indica completa inadeguatezza e 1 massima idoneità) a diverse porzioni del territorio.
 
 Nel caso in esame, la carta di idoneità è stata elaborata a titolo esplorativo sulla base delle esigenze biologiche ed ecologiche del set di specie di vertebrati precedentemente selezionati per l'elaborazione della rete ecologica regionale (cfr. RERU) e tenendo conto delle categorie di uso del suolo aggiornate nel contesto comunale con la carta geobotanica.
-Per la realizzazione di questa carta generale sono stati impiegati dei modelli geostatistici a massima entropia noti anche come \emph{Species Distribution Models} (SDM) in grado di quantificare la vocazionalità territoriale sulla base delle categorie ambientali (cfr. Maxent ==BIB==).
+Per la realizzazione di questa carta generale sono stati impiegati dei modelli geostatistici a massima entropia noti anche come \emph{Species Distribution Models} (SDM) in grado di quantificare la vocazionalità territoriale sulla base delle categorie ambientali (cfr. Maxent \citep{gomesSpeciesDistributionModelling2018}).
 Lo scopo finale di questi strumenti modellistici è quello di mappare e quantificare il potenziale biologico del territorio, fornendo una base scientifica per comprendere come le diverse aree possano supportare la presenza e gli spostamenti della fauna locale o per supportare i processi di pianificazione territoriale, soprattutto quelli mirati alla conservazione della biodiversità e alla valutazione degli impatti ambientali.
 
 \subsection{Carta della permeabilità}\label{carta-della-permeabilituxe0}
 
 Dopo aver valutato le potenzialità del territorio alla presenza delle specie è necessario trasformare questo valore in un indicatore più vicino alla realtà attraverso la valutazione degli elementi del territorio che possono influenzare la capacità di spostamento delle specie nel territorio.
-La distribuzione spaziale delle risorse nel paesaggio è infatti organizzata sotto forma di patch discrete e affinché il territorio sia caratterizzato da processi ecologici funzionali è necessario assicurare il movimento degli animali tra le diverse aree dove sono presenti tali risorse (Taylor et al.~1993).
+La distribuzione spaziale delle risorse nel paesaggio è infatti organizzata sotto forma di patch discrete e affinché il territorio sia caratterizzato da processi ecologici funzionali è necessario assicurare il movimento degli animali tra le diverse aree dove sono presenti tali risorse \citep{taylorConnectivityVitalElement1993}.
 Alcuni elementi limitano o impediscono il passaggio della fauna da una zona all'altra, mentre altri agevolano la mobilità e il trasferimento degli individui delle popolazioni.
 Nel primo caso si parla di barriere (spesso codificate come infrastrutture grigie) mentre nel secondo caso di corridoi (infrastrutture verdi e blu).
 Le infrastrutture antropiche spesso costituiscono le forme di barriere più significative.
 Le strade, soprattutto quelle ad alto traffico sono un esempio di ostacolo particolarmente critico, non solo per la mortalità diretta legata agli investimenti veicolari, ma anche per l'effetto barriera esercitato dal rumore, l'inquinamento luminoso e le vibrazioni associate al transito dei mezzi.
 I corridoi ecologici sono invece quegli elementi lineari del paesaggio che facilitano il movimento degli organismi tra habitat, mantenendo la connettività funzionale del territorio.
 Questi elementi possono essere di diversa natura e scala, dalla semplice siepe che collega due frammenti di habitat fino ai più grandi corridoi fluviali.
-In particolare, i sistemi fluviali e le loro fasce ripariali rappresentano le più importanti vie di connettività poiché la loro vegetazione offre a un gran numero di specie copertura, risorse alimentari e microhabitat diversificati (==BIB==).
+In particolare, i sistemi fluviali e le loro fasce ripariali rappresentano le più importanti vie di connettività poiché la loro vegetazione offre a un gran numero di specie copertura, risorse alimentari e microhabitat diversificati \citep{taylorConnectivityVitalElement1993}.
 Anche il sistema costituita da parchi, giardini, viali alberati e tetti verdi, possono creare connessioni importanti per alcune specie in grado di adattarsi agli ambienti antropizzati.
 Allo stesso tempo anche le coltivazioni gestite con pratiche sostenibili, possono assicurare un buon grado di permeabilità per la fauna, mantenendo inalterato il loro valore produttivo.
 
 \subsection{Analisi della Frammentazione}\label{analisi-della-frammentazione}
 
-La frammentazione territoriale costituisce un fenomeno complesso caratterizzato dalla progressiva riduzione della superficie degli ecosistemi naturali e seminaturali, accompagnata da un crescente isolamento spaziale delle aree residue (==BIB==).
+La frammentazione territoriale costituisce un fenomeno complesso caratterizzato dalla progressiva riduzione della superficie degli ecosistemi naturali e seminaturali, accompagnata da un crescente isolamento spaziale delle aree residue \citep{puttkerIndirectEffectsHabitat2020, lawrenceLandscapeFragmentationNatura2021, simaikaArtificialPondsIncrease2016}.
 Questo processo di disgregazione paesaggistica determina la trasformazione del territorio in mosaici frammentati, composti da tessere di habitat di dimensioni ridotte e spazialmente disgiunte.
 Associati a questo tipo di paesaggio ci sono diversi tipi di rischi che ne compromettono la funzionalità ecologica.
 A livello di popolazione, generalmente il processo di frammentazione aumenta il grado di vulnerabilità: popolazioni piccole e isolate sono infatti soggette a deriva genetica, perdita di variabilità genetica e depressione da inbreeding, tutti fenomeni che riducono la fitness individuale e la capacità di adattamento.
@@ -380,9 +383,9 @@ Alcuni esempi di questi effetti includono le modificazioni delle condizioni di l
 I principali motori di questa trasformazione sono rappresentati dai processi di urbanizzazione e dalla sottrazione di habitat naturali.
 In particolare, quelli che si manifestano attraverso varie modalità di sviluppo territoriale e dall'espansione della rete infrastrutturale.
 Associato al concetto della frammentazione c'è il suo complemento ovvero la connettività.
-Questa è definita come ``il grado in cui il paesaggio facilita il movimento di risorse tra le aree'' e può essere misurata dalla probabilità di movimento tra tutti i punti o le aree di habitat in un paesaggio (Taylor et al., 1993).
+Questa è definita come ``il grado in cui il paesaggio facilita il movimento di risorse tra le aree'' e può essere misurata dalla probabilità di movimento tra tutti i punti o le aree di habitat in un paesaggio \citep{taylorConnectivityVitalElement1993}.
 
-Per una prima valutazione del livello di frammentazione del territorio sono stati calcolati tre indici generali, che rappresentano misure complementari, ciascuna con specifiche proprietà e interpretazioni (Jaeger 2000).
+Per una prima valutazione del livello di frammentazione del territorio sono stati calcolati tre indici generali, che rappresentano misure complementari, ciascuna con specifiche proprietà e interpretazioni \citep{jaegerLandscapeDivisionSplitting2000}.
 In particolare sono stati considerati, ripartendoli a livello di unità di paesaggio,: il landscape division, lo splitting index e l'effective mesh size.
 
 Il \emph{landscape division} (divisione del paesaggio - D) è definito come la probabilità che due punti scelti casualmente all'interno del paesaggio non siano connessi a causa della frammentazione.
@@ -446,7 +449,7 @@ L'effective mesh size può anche essere espressa in relazione allo splitting ind
 
 Queste tre metriche tradizionali in alcuni casi possono presentare delle valutazioni leggermente distorte, soprattutto quando i confini delle unità di studio frammentano artificialmente le patch naturali.
 Questo fenomeno, noto come ``\emph{boundary problem}'', può portare a valutazioni errate della frammentazione del paesaggio, poiché patch che in realtà sono continue vengono considerate separate semplicemente perché attraversano i confini dell'area di studio.
-Per superare questa limitazione Moser et al.~(2007), hanno proposto il metodo Cross-Boundary Connections (CBC).
+Per superare questa limitazione alcuni autori \citep{moserModificationEffectiveMesh2007} hanno proposto il metodo Cross-Boundary Connections (CBC).
 Questo approccio affronta la limitazione includendo nell'analisi anche le aree esterne ai confini dell'unità di studio.
 L'approccio si basa su un principio fondamentale: considerare l'area completa di ogni patch (\(A^{cmpl}_i\)), indipendentemente dai confini amministrativi o metodologici dell'area di indagine.
 
@@ -454,7 +457,7 @@ Sulla base anche di quest'ultima variate metodologica sono state eseguite alcune
 
 \subsection{Morphological Spatial Pattern Analysis}\label{morphological-spatial-pattern-analysis}
 
-L'analisi dei pattern morfologici spaziali o \emph{Morphological Spatial Pattern Analysis} (MSPA) identifica una metodologia di analisi spaziale sviluppata dal Joint Research Centre (JRC) della Commissione Europea e disponibile attraverso un codice in formato aperto (Vogt and Riitters, 2017).
+L'analisi dei pattern morfologici spaziali o \emph{Morphological Spatial Pattern Analysis} (MSPA) identifica una metodologia di analisi spaziale sviluppata dal Joint Research Centre (JRC) della Commissione Europea e disponibile attraverso un codice in formato aperto \citep{vogtGuidosToolboxUniversalDigital2017, vogtAbbreviationLarvalDevelopment2013, vogtMeasuringForestSpatial2025}.
 Questo approccio analitico ha trovato applicazione in contesti istituzionali di rilievo, tra cui i rapporti ufficiali dell'USDA-Forest Service per il monitoraggio dello stato delle foreste e delle praterie, nonché nell'ambito del programma EnviroAtlas dell'EPA. Il processo algoritmico MSPA genera una mappa di sintesi che fornisce un quadro statistico completo dei pattern spaziali ambientali presenti nell'area di studio.
 Questa rappresentazione cartografica integra diverse tipologie di classi morfologiche e identifica i corridoi di connessione ecologica presenti nel territorio.\\
 Il framework metodologico si basa su un sistema di operatori matematico-morfologici progettati per caratterizzare le geometrie spaziali e le relazioni di connettività presenti nella carta di uso del suolo.
@@ -478,7 +481,7 @@ Ci sono due possibili opzioni: una connettività a 8 celle, in cui a partire da 
 
 \subsection{Marxan}\label{marxan}
 
-Per consolidare il sistema della rete ecologica tra gli strumenti che verranno impiegati dal software Marxan (==BIB==).
+Per consolidare il sistema della rete ecologica tra gli strumenti che verranno impiegati dal software Marxan \citep{ardronMarxanGoodPractices2010}.
 Marxan è stato sviluppato per la progettazione di un sistema connesso di aree ad alta valenza naturalistica soddisfacendo il requisito di ``minimo costo'' in un complesso di scenari multipli.
 Nel contesto della progettazione il costo minimo può riferirsi a quell'insieme di valutazioni di natura ecologica, sociale ed economiche finalizzate a ottenere una rappresentazione minima delle caratteristiche della biodiversità con il minor costo possibile.
 La logica è che è più probabile che vengano mantenuti gli elementi della rete se questi si dimostrano essere i più economici o i meno socialmente dirompenti.
@@ -753,7 +756,7 @@ area (\%)
 Dall'analisi della carta risulta che il territorio è coperto per circa il 46\% da boschi (di cui la maggior parte 41.3\% di caducifoglie), il 24.2\% da aree agricole con seminativi semplici, il 7\% da oliveti e meno del 6\% da aree urbanizzate (Fig. \ref{fig:usoSuolo}).
 
 \begin{figure}
-\includegraphics[width=50.75in]{./figs/RECSpoleto_usoSuoloPlot} \caption{Categorie di uso del suolo. Ogni cella rappresenta una superficie di 1 $km^2$.}\label{fig:usoSuolo}
+\includegraphics[width=22.22in]{./figs/RECSpoleto_usoSuoloPlot} \caption{Categorie di uso del suolo. Ogni cella rappresenta una superficie di 1 $km^2$.}\label{fig:usoSuolo}
 \end{figure}
 
 Esaminando la ripartizione di queste categorie geobotaniche nelle 18 unità di paesaggio, ridotte a 12 attraverso l'aggregazione di tutti gli elementi con configurazione di area urbana, che caratterizzano il territorio spoletino emerge (Fig. \ref{fig:unitaPaes}):
@@ -1745,11 +1748,11 @@ In \hyperref[annexI]{Allegato I} si riportano le diapositive delle presentazioni
 
 \chapter{Considerazioni conclusive}\label{considerazioni-conclusive}
 
-Le proiezioni demografiche indicano che nei prossimi decenni oltre il 65\% della popolazione mondiale risiederà e lavorerà in contesti urbani (==BIB==). Benché la diversità specifica nelle città risulti generalmente ridotta rispetto agli habitat naturali, è stata documentata la presenza di un numero considerevole di specie (==BIB==). In alcuni casi, gli ambienti urbani possono addirittura offrire rifugio anche a specie che sono valutate ad elevato rischio rischio di estinzione secondo i criteri dell'Unione Internazionale per la Conservazione della Natura (IUCN). Una recente meta-analisi condotta su un ampio dataset ha evidenziato infatti come l'estensione complessiva delle aree verdi urbane, unitamente alla presenza di corridoi ecologici e a una struttura del verde articolata, costituisca un fattore determinante per la ricchezza specifica locale (==BIB==).
+Le proiezioni demografiche indicano che nei prossimi decenni oltre il 65\% della popolazione mondiale risiederà e lavorerà in contesti urbani \citep{owid-population-growth}. Benché la diversità specifica nelle città risulti generalmente ridotta rispetto agli habitat naturali, è stata documentata la presenza di un numero considerevole di specie \citep{heinoUnravellingCorrelatesSpecies2017, weisserAnimalaidedDesignPlanning2025, fairbairnUrbanBiodiversityAffected2024, visintinDesigningCitiesEveryday2025, mendezBetterNotMore2024}. In alcuni casi, gli ambienti urbani possono addirittura offrire rifugio anche a specie che sono valutate ad elevato rischio rischio di estinzione secondo i criteri dell'Unione Internazionale per la Conservazione della Natura (IUCN). Una recente meta-analisi condotta su un ampio dataset ha evidenziato infatti come l'estensione complessiva delle aree verdi urbane, unitamente alla presenza di corridoi ecologici e a una struttura del verde articolata, costituisca un fattore determinante per la ricchezza specifica locale (==BIB==).
 
 In questo contesto di crescente urbanizzazione globale, anche il territorio spoletino assume un valore strategico particolare. Il quadro faunistico tracciato nella presente relazione evidenzia infatti l'elevato valore naturalistico di quest'area che richiede dunque un approccio gestionale equilibrato tra conservazione delle specie già note e promozione di ricerche per colmare le lacune conoscitive, specialmente nel mondo degli invertebrati che potrebbero riservare importanti sorprese dal punto di vista della biodiversità. La presenza di 113 specie tutelate dalla Direttiva Habitat (circa il 21\% del totale) rafforza l'importanza dell'area e la necessità di proseguire nelle azioni di tutela e mantenimento dello stato del territorio attraverso strategie di conservazione oculate anche al di fuori delle aree Natura 2000. Gli uccelli e i mammiferi, essendo meglio conosciuti, possono costituire la base per immediate strategie di tutela, mentre per gli invertebrati serve un approccio prudenziale da valutare caso per caso.
 
-L'incorporazione delle reti ecologiche nella pianificazione municipale rappresenta un elemento strategico per assicurare uno sviluppo territoriale sostenibile, salvaguardando la biodiversità e rafforzando la resilienza ecosistemica. Per soddisfare in primo luogo il benessere dei propri cittadini le politiche territoriali e urbanistiche locali hanno il dovere di considerare l'interconnessione tra ambiti naturali e antropizzati, realizzando infrastrutture verdi e corridoi ecologici che supportino la fauna e la flora autoctone in un'ottica di quella multifunzionalità che garantisce simultaneamente servizi ecosistemici essenziali, qualità ambientale urbana e opportunità ricreative per la comunità locale (cfr. ==Fairbairn et al., 2024==).
+L'incorporazione delle reti ecologiche nella pianificazione municipale rappresenta un elemento strategico per assicurare uno sviluppo territoriale sostenibile, salvaguardando la biodiversità e rafforzando la resilienza ecosistemica. Per soddisfare in primo luogo il benessere dei propri cittadini le politiche territoriali e urbanistiche locali hanno il dovere di considerare l'interconnessione tra ambiti naturali e antropizzati, realizzando infrastrutture verdi e corridoi ecologici che supportino la fauna e la flora autoctone in un'ottica di quella multifunzionalità che garantisce simultaneamente servizi ecosistemici essenziali, qualità ambientale urbana e opportunità ricreative per la comunità locale \citep{fairbairnUrbanBiodiversityAffected2024}.
 
 Il territorio spoletino attualmente presenta una pressione insediativa relativamente contenuta con meno del 6\% ascrivibile ad area urbana in senso stretto. Anche la ripartizione tra aree boscate (46\%) e aree agricole (circa 31\% tra seminativi e oliveti) evidenzia un territorio che mantiene un buon equilibrio tra componenti naturali e attività umane tradizionali. Tuttavia, le analisi dei pattern spaziali danno conto della presenza di numerose tessere di piccole dimensioni, con processi di frammentazione in corso che costituiscono una minaccia per la continuità ecologica. Il basso indice di coesione (mediamente 9.56 su 100) segnala un certo grado di disconnessione tra le diverse componenti del paesaggio, con potenziali impatti negativi sulla biodiversità e sui servizi ecosistemici. La chiave di lettura principale è che ci troviamo davanti a un territorio che ha ancora le potenzialità per mantenere un equilibrio sostenibile, ma che richiede una serie di interventi diretti mirati a mantenere e migliorare le connessioni ecologiche, cruciali per garantire un buono stato di conservazione del sistema paesaggistico-ecologico.
 
@@ -1821,7 +1824,9 @@ saranno:
 
 \chapter{Allegato I}\label{annexI}
 
-\section{Diapositive delle presentazioni utilizzate durante gli eventi di disseminazione dei risultati della ricerca}\label{diapositive-delle-presentazioni-utilizzate-durante-gli-eventi-di-disseminazione-dei-risultati-della-ricerca}
+\section{Layout diapositive}\label{layout-diapositive}
+
+A seguire le slide delle presentazioni utilizzate durante gli eventi di disseminazione dei risultati della ricerca raggruppate per attività.
 
 \subsection{Attività PCTO (Percorsi per le Competenze Trasversali e l'Orientamento) su biodiversità e reti ecologiche}\label{attivituxe0-pcto-percorsi-per-le-competenze-trasversali-e-lorientamento-su-biodiversituxe0-e-reti-ecologiche}
 
@@ -1975,5 +1980,7 @@ saranno:
 \pandocbounded{\includegraphics[keepaspectratio]{./figs/Fauna2025/fauna2025.key 9.jpeg}}
 
 \pandocbounded{\includegraphics[keepaspectratio]{./figs/Fauna2025/fauna2025.key 10.jpeg}}
+
+  \bibliography{references.bib}
 
 \end{document}
