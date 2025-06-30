@@ -1,10 +1,11 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-%
 \documentclass[
 ]{book}
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -35,7 +36,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -64,12 +64,11 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
 \usepackage{booktabs}
 \usepackage{polyglossia}
 \setmainlanguage{italian}
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -92,14 +91,13 @@
 }
 \chapter{Premessa}\label{premessa}
 
-Natura 2000 rappresenta il principale strumento della politica dell'Unione Europea per la conservazione della biodiversità. Consiste in un insieme di aree protette, inizialmente identificate come Siti di Interesse Comunitario e successivamente designate come Zone Speciali di Conservazione (ZSC) e Zone di Protezione Speciale (ZPS), che costituiscono i nuclei essenziali per la tutela della biodiversità in Italia e in Europa. La protezione di queste aree strategiche, selezionate secondo i criteri stabiliti dalle Direttive europee 92/43/CEE (Habitat) e 79/409/CEE (Uccelli), ha segnato un passaggio decisivo per la salvaguardia di habitat e specie nel vecchio continente. Tuttavia, la semplice creazione di un sistema di aree protette non è insufficiente per garantire una tutela efficace della biodiversità dei territori. Infatti, la strategia di conservazione della biodiversità incentrata principalmente sulla designazione di aree protette all'interno di un contesto di frammentazione generalizzata ha mostrato fin da subito significative limitazioni ed elementi di criticità. Infatti, è noto che con un approccio basato sull'individuazione di ``isole naturali'' di fatto separate e quasi indipendenti si innescano fenomeni di frammentazione e insularizzazione che si traducono in un limitato movimento delle specie, che sono rese più vulnerabili alle pressioni e alle minacce esterne. Per superare i limiti di questo approccio, la Direttiva Habitat con l'art. 10 evidenzia il ruolo cruciale rivestito dagli elementi paesaggistici che hanno un ruolo di connessione e invita gli enti gestori a conservare e sviluppare un sistema di siti tra loro interconnessi (\emph{``Laddove lo ritengano necessario, nell'ambito delle politiche nazionali di riassetto del territorio e di sviluppo, e segnatamente per rendere ecologicamente più coerente la rete Natura 2000, gli Stati membri si impegnano a promuovere la gestione di elementi del paesaggio che rivestono primaria importanza per la fauna e la flora selvatiche. Si tratta di quegli elementi che, per la loro struttura lineare e continua (come i corsi d'acqua con le relative sponde, o i sistemi tradizionali di delimitazione dei campi) o il loro ruolo di collegamento (come gli stagni o i boschetti) sono essenziali per la migrazione, la distribuzione geografica e lo scambio genetico di specie selvatiche.''}). Questi elementi con funzione di corridoio favoriscono infatti la permeabilità del territorio e creano una vera a propria rete ecologica funzionale. In altre parole, la metodologia proposta da Natura 2000 prevede un sistema di aree protette completamente interconnesso, comprensivo di zone cuscinetto e corridoi ecologici che riducono o eliminano l'isolamento delle aree core e delle popolazioni presenti, mitigando al contempo le problematiche che influenzano negativamente habitat e specie.
+Natura 2000 rappresenta il principale strumento della politica dell'Unione Europea per la conservazione della biodiversità. Consiste in un insieme di aree protette, inizialmente identificate come Siti di Interesse Comunitario e successivamente designate come Zone Speciali di Conservazione (ZSC) e Zone di Protezione Speciale (ZPS), che costituiscono i nuclei essenziali per la tutela della biodiversità in Italia e in Europa. La protezione di queste aree strategiche, selezionate secondo i criteri stabiliti dalle Direttive europee 92/43/CEE (Habitat) e 79/409/CEE (Uccelli), ha segnato un passaggio decisivo per la salvaguardia di habitat e specie nel vecchio continente. Tuttavia, la semplice creazione di un sistema di aree protette non è sufficiente per garantire una tutela efficace della biodiversità dei territori. La strategia di conservazione della biodiversità incentrata principalmente sulla designazione di aree protette all'interno di un contesto di frammentazione generalizzata ha mostrato fin da subito significative limitazioni ed elementi di criticità. Infatti, è noto che con un approccio basato sull'individuazione di ``isole naturali'' di fatto separate e quasi indipendenti si innescano fenomeni di frammentazione e insularizzazione che si traducono in un limitato movimento delle specie, che sono rese più vulnerabili alle pressioni e alle minacce esterne. Per superare i limiti di questo approccio, la Direttiva Habitat con l'art. 10 evidenzia il ruolo cruciale rivestito dagli elementi paesaggistici che hanno un ruolo di connessione e invita gli enti gestori a conservare e sviluppare un sistema di siti tra loro interconnessi (\emph{``Laddove lo ritengano necessario, nell'ambito delle politiche nazionali di riassetto del territorio e di sviluppo, e segnatamente per rendere ecologicamente più coerente la rete Natura 2000, gli Stati membri si impegnano a promuovere la gestione di elementi del paesaggio che rivestono primaria importanza per la fauna e la flora selvatiche. Si tratta di quegli elementi che, per la loro struttura lineare e continua (come i corsi d'acqua con le relative sponde, o i sistemi tradizionali di delimitazione dei campi) o il loro ruolo di collegamento (come gli stagni o i boschetti) sono essenziali per la migrazione, la distribuzione geografica e lo scambio genetico di specie selvatiche.''}). Questi elementi con funzione di corridoio favoriscono infatti la permeabilità del territorio e creano una vera a propria rete ecologica funzionale. In altre parole, la metodologia proposta da Natura 2000 prevede un sistema di aree protette completamente interconnesso, comprensivo di zone cuscinetto e corridoi ecologici che riducono o eliminano l'isolamento delle aree core e delle popolazioni presenti, mitigando al contempo le problematiche che influenzano negativamente habitat e specie.
 
-Questo approccio metodologico valido su scala europea e nazionale può essere esteso anche a quella regionale e comunale. Ne consegue l'opportunità di integrare lo sviluppo di una rete ecologica funzionale anche all'interno dei processi di pianificazione urbana e dell'ordinario governo del territorio. I comuni in particolare possono svolgere un ruolo cruciale nell'individuare e preservare le aree verdi, gli spazi naturali e i corridoi ecologici che collegano habitat frammentati rispetto alle aree core tradizionali, garantendo così una maggiore capacità di funzionamento e sopravvivenza degli ecosistemi e delle specie. Non solo. Sebbene apparentemente rivolte in modo esclusivo alla tutela della biodiversità, le reti ecologiche sono di rilevante importanza anche per l'uomo.
-La costruzione di una rete ecologica urbana ha un effetto completo sulla città, sulla sua estetica, sulla società ed sull'economia ed è in grado di fornire una linea guida per lo sviluppo sostenibile per la città. Da non trascurare sono poi gli effetti benefici sulla comunità. È infatti dimostrato che il contatto frequente con gli ambienti naturali presenta effetti positivi sulla salute umana e sul benessere fisico e mentale dell'uomo. L'esposizione ad aree verdi come boschi, parchi urbani e giardini riduce i sintomi tipici di stress e depressione, aiuta a recuperare l'affaticamento dell'attenzione e migliora umore e emozioni positive auto-riferite. Un più facile accesso agli ambienti naturali favorisce le attività fisiche all'aperto che contrastano i fenomeni di obesità e diabete. Inoltre, l'esposizione a lungo termine ad ambienti naturali è stato associato a una riduzione della mortalità per cause respiratorie, cardiovascolari e per cancro e a un miglioramento della salute respiratoria e mentale.
+Questo approccio metodologico valido su scala europea e nazionale può essere esteso anche a quella regionale e comunale. Ne consegue l'opportunità di integrare lo sviluppo di una rete ecologica funzionale anche all'interno dei processi di pianificazione urbana e dell'ordinario governo del territorio. I comuni in particolare possono svolgere un ruolo cruciale nell'individuare e preservare le aree verdi, gli spazi naturali e i corridoi ecologici che collegano habitat frammentati rispetto alle aree core tradizionali, garantendo così una maggiore capacità di funzionamento e sopravvivenza degli ecosistemi e delle specie. Non solo. Sebbene apparentemente rivolte in modo esclusivo alla tutela della biodiversità, le reti ecologiche sono di rilevante importanza anche per l'uomo. La costruzione di una rete ecologica urbana ha un effetto completo sulla città, sulla sua estetica, sulla società ed sull'economia ed è in grado di fornire una linea guida per lo sviluppo sostenibile per la città. Da non trascurare sono poi gli effetti benefici sulla comunità. È infatti dimostrato che il contatto frequente con gli ambienti naturali presenta effetti positivi sulla salute umana e sul benessere fisico e mentale dell'uomo. L'esposizione ad aree verdi come boschi, parchi urbani e giardini riduce i sintomi tipici di stress e depressione, aiuta a recuperare il calo dell'attenzione e migliora umore e emozioni positive auto-riferite. Un più facile accesso agli ambienti naturali favorisce le attività fisiche all'aperto che contrastano i fenomeni di obesità e diabete. Inoltre, l'esposizione a lungo termine ad ambienti naturali è stata associata a una riduzione della mortalità per cause respiratorie, cardiovascolari e per cancro e a un miglioramento della salute mentale \citep{aerts2018}.
 
-Il Comune di Spoleto nel 2023 ha intrapreso congiuntamente con il Dipartimento di Chimica, Biologia e Biotecnologie dell'Università degli Studi di Perugia un percorso finalizzato allo ``Studio della Rete Ecologica applicato al potenziamento della Connettività del Territorio Spoletino attraverso esperienze pilota di gestione e interventi Infrastrutturali''. Tale studio integrato ha nelle sue finalità strategiche di: i) supportare l'amministrazione nell'identificazione e il rafforzamento dei corridoi ecologici esistenti, la creazione di nuove connessioni tra habitat frammentati per favorire la biodiversità locale, la definizione di interventi mirati alla conservazione delle specie target individuate e la promozione di pratiche di gestione sostenibile del territorio, e ii) fornire elementi conoscitivi funzionali per la redazione del Piano Regolatore del Comune di Spoleto, del Piano del Verde e del Piano di Comunicazione e Informazione ambientale rivolto a studenti, tecnici e cittadini.
+Il Comune di Spoleto nel 2023 ha intrapreso congiuntamente con il Dipartimento di Chimica, Biologia e Biotecnologie dell'Università degli Studi di Perugia un percorso finalizzato allo ``Studio della Rete Ecologica applicato al potenziamento della Connettività del Territorio Spoletino attraverso esperienze pilota di gestione e interventi Infrastrutturali''. Tale studio integrato ha nelle sue finalità strategiche di supportare l'amministrazione: i) nell'identificazione e nel rafforzamento dei corridoi ecologici esistenti, la creazione di nuove connessioni tra habitat frammentati per favorire la biodiversità locale, la definizione di interventi mirati alla conservazione delle specie target individuate e la promozione di pratiche di gestione sostenibile del territorio, e ii) fornire elementi conoscitivi funzionali per la redazione del Piano Regolatore del Comune di Spoleto, del Piano del Verde e del Piano di Comunicazione e Informazione ambientale rivolto a studenti, tecnici e cittadini.
 
-In questa relazione verranno pertanto analizzati i concetti fondamentali delle reti ecologiche attraverso la descrizione dei principali elementi costitutivi delle reti ecologiche rappresentati dai corridoi ecologici, dalle aree core e dagli habitat con funzione di margine. Verranno evidenziati i principali benefici per fauna e flora locali, prestando attenzione all'importanza della riduzione della frammentazione e al miglioramento della connettività tra gli habitat. Questa permeabilità del territorio è infatti la chiave per contrastare la frammentazione e giungere, nel medio-lungo termine, ad uno sviluppo urbano sostenibile e armonioso che valorizzi i servizi che la presenza di ecosistemi funzionali offre. Saranno inoltre presentate alcune elaborazioni cartografiche finalizzate alla messa in campo di buone pratiche di pianificazione a scala comunale.
+In questa relazione verranno pertanto analizzati i concetti fondamentali delle reti ecologiche attraverso la descrizione dei loro principali elementi costitutivi rappresentati dai corridoi ecologici, dalle aree core e dagli habitat con funzione di margine. Verranno illustrati i principali pattern che sono emersi dall'analisi della nuova carta di uso del suolo del territorio comunale e evidenziati i principali benefici per la fauna locale, prestando attenzione all'importanza della riduzione della frammentazione e al miglioramento della connettività tra gli habitat. La permeabilità del territorio è infatti la chiave per contrastare la frammentazione e giungere, nel medio-lungo termine, ad uno sviluppo urbano sostenibile e armonioso che valorizzi i servizi derivanti dalla presenza di ecosistemi funzionali. Sono infine presentati alcune elaborazioni cartografiche finalizzate alla messa in campo di buone pratiche di pianificazione a scala comunale e i contributi predisposti per la disseminazione dei risultati.
 
 \chapter{Introduzione}\label{introduzione}
 
@@ -194,11 +192,19 @@ in modo più approfondito la struttura e la complessità delle comunità
 biologiche presenti sul territorio. Sulla base di queste informazioni è
 possibile definire il set di specie target che strategicamente saranno
 prese in considerazione durante la progettazione della rete. In linea
-generale, è consigliabile selezionare queste specie in base a: -
-Sensibilità al processo di frammentazione; - Facilità di
-campionamento; - Diffusione sul territorio, con preferenza per le specie
-a distribuzione relativamente ampia; - Stretto legame con gli ambienti
-di riferimento.
+generale, è consigliabile selezionare queste specie in base a:
+
+\begin{itemize}
+\item
+  Sensibilità al processo di frammentazione;
+\item
+  Facilità di campionamento;
+\item
+  Diffusione sul territorio, con preferenza per le specie a
+  distribuzione relativamente ampia;
+\item
+  Stretto legame con gli ambienti di riferimento.
+\end{itemize}
 
 In alternativa, è possibile prendere come riferimento organismi modello
 teorici, che racchiudono in sé alcune delle principali caratteristiche
@@ -236,9 +242,9 @@ la configurazione attuale degli elementi di naturalità, ma anche
 considerarne la posizione rispetto alle previsioni di trasformazione del
 territorio di riferimento. Il paesaggio, infatti, non è una realtà
 statica: esso è soggetto a continue modificazioni, che possono derivare
-sia da dinamiche spontanee e progressive --- come l'espansione urbana, il
+sia da dinamiche spontanee e progressive come l'espansione urbana, il
 cambiamento delle colture prevalenti o l'abbandono delle aree collinari
-e montane --- sia da decisioni pianificatorie deliberate, definite dai
+e montane, sia da decisioni pianificatorie deliberate, definite dai
 diversi livelli di governo e pianificazione territoriale.
 
 \subsection{Obiettivi della rete}\label{obiettivi-della-rete}
@@ -279,24 +285,25 @@ Dal punto di vista metodologico, il piano delle attività è stato condotto in a
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{./figs/RECSpoleto_map03.png}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Figura 2.1 - Scheda delle fasi di lavoro e risultati cartografici attesi.}]{./figs/RECSpoleto_map03.png}}
 \caption{Figura 2.1 - Scheda delle fasi di lavoro e risultati cartografici attesi.}
 \end{figure}
 
 \subsection{Sviluppo banca dati faunistica}\label{sviluppo-banca-dati-faunistica}
 
 In primo luogo sono state individuate le fonti più utili per inquadrare lo stato del territorio e descrivere le sue caratteristiche ecosistemiche.
+
 Tra queste, per estrapolare il quadro conoscitivo faunistico essenziale per la definizione delle future carte di idoneità, sono state utilizzate le informazioni pubblicate negli atlanti faunistici regionali, le schede dei formulari standard di Natura 2000 che riportano in dettaglio le caratteristiche aggiornate dei siti e delle loro comunità e le osservazioni contenute nelle banche dati sviluppate secondo la filosofia ``\emph{Free and open access to biodiversity data}''.
 
 Le informazioni raccolte hanno contribuito alla caratterizzazione della biodiversità locale e alla redazione della lista di specie presenti.
-L'inventario è costituito prevalentemente da specie di vertebrati, ma è stato integrato con osservazioni occasionali di invertebrati provenienti da banche dati aperte.
+L'inventario è costituito prevalentemente da specie di vertebrati, ma è stato integrato con osservazioni occasionali di invertebrati provenienti da banche dati aperte (cfr. iNaturalist e Observation.org attraverso il portale gbif.org).
 Queste informazioni, sebbene non derivino da monitoraggi sistematici, concorrono a delineare un quadro conoscitivo aggiornato della fauna comunale, restituendo seppur parzialmente anche il ruolo della componente invertebrata, di cui localmente si hanno scarse conoscenze distributive.
 Pertanto, benché tali dati siano lontani dal rappresentare l'effettiva ricchezza specifica (in Italia la fauna invertebrata costituisce circa il 98\% della fauna totale\footnote{La fauna italiana (marina, terrestre e d'acqua dolce) è stimata in oltre 60.000 specie, di cui circa il 98\% costituito da Invertebrati e il rimanente da circa 1.300 specie di Vertebrati.
   Il phylum più ricco è quello degli Artropodi, con quasi 50.000 specie, in buona parte appartenenti alla classe degli Insetti, in particolare Coleotteri (12.000 specie circa).}), essi offrono comunque un contributo significativo alla caratterizzazione faunistica del territorio.
 
 \subsection{Carta geobotanica}\label{carta-geobotanica}
 
-Per l'avanzamento del progetto Rete Ecologica Comunale è stato predisposto un programma di aggiornamento e revisione della garta geobotanica e di uso del suolo dell'intero territorio comunale.
+Per l'avanzamento del progetto Rete Ecologica Comunale è stato predisposto un programma di aggiornamento e revisione della carta geobotanica e di uso del suolo dell'intero territorio comunale.
 La base di partenza è rappresentata dalla carta geobotanica sviluppata per il territorio regionale umbro nel 2018 per il progetto RERU3 che era stata realizzata con scala nominale pari a 1:10.000 con un dettaglio cartografico pari a circa un ettaro, ridotto a 2.000 metri quadrati per le formazioni boscate e a 5.000 metri quadrati per gli impianti di arboricoltura da legno, e una precisione pari a circa 5 m.
 
 L'importanza di disporre di una carta geobotanica e dell'uso del suolo dettagliata e aggiornata risiede nel suo valore strategico per molteplici ambiti di applicazione scientifica e gestionale.
@@ -368,7 +375,7 @@ Le strade, soprattutto quelle ad alto traffico sono un esempio di ostacolo parti
 I corridoi ecologici sono invece quegli elementi lineari del paesaggio che facilitano il movimento degli organismi tra habitat, mantenendo la connettività funzionale del territorio.
 Questi elementi possono essere di diversa natura e scala, dalla semplice siepe che collega due frammenti di habitat fino ai più grandi corridoi fluviali.
 In particolare, i sistemi fluviali e le loro fasce ripariali rappresentano le più importanti vie di connettività poiché la loro vegetazione offre a un gran numero di specie copertura, risorse alimentari e microhabitat diversificati \citep{taylorConnectivityVitalElement1993}.
-Anche il sistema costituita da parchi, giardini, viali alberati e tetti verdi, possono creare connessioni importanti per alcune specie in grado di adattarsi agli ambienti antropizzati.
+Anche il sistema costituito da parchi, giardini, viali alberati e tetti verdi, può creare connessioni importanti per alcune specie in grado di adattarsi agli ambienti antropizzati \citep{simaika2016, proske2022, nie2021, gann2019}.
 Allo stesso tempo anche le coltivazioni gestite con pratiche sostenibili, possono assicurare un buon grado di permeabilità per la fauna, mantenendo inalterato il loro valore produttivo.
 
 \subsection{Analisi della Frammentazione}\label{analisi-della-frammentazione}
@@ -928,7 +935,7 @@ Patch cohesion index
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{_main_files/figure-latex/fragIndex2f-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragIndex2f}Plot degli Indici fragstats per Classe geobotanica. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragIndex2f-1.pdf}}
 \caption{\label{fig:fragIndex2f}Plot degli Indici fragstats per Classe geobotanica. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
 \end{figure}
 
@@ -1084,13 +1091,13 @@ Mean patch area
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{_main_files/figure-latex/fragUrbano-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragUrbano}Plot degli Indici fragstats per Classe geobotanica in Unità urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragUrbano-1.pdf}}
 \caption{\label{fig:fragUrbano}Plot degli Indici fragstats per Classe geobotanica in Unità urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
 \end{figure}
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{_main_files/figure-latex/fragNoUrb-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:fragNoUrb}Plot degli Indici fragstats per Classe geobotanica nell'area non urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}]{_main_files/figure-latex/fragNoUrb-1.pdf}}
 \caption{\label{fig:fragNoUrb}Plot degli Indici fragstats per Classe geobotanica nell'area non urbana. Il codice della Classe è riportato all'interno del singolo punto. La dimensione dei punti è proporzionale al valore del Patch cohesion index.}
 \end{figure}
 
@@ -1399,7 +1406,7 @@ La relazione lineare inversa esistente tra gli indici di Splitting ed Effective 
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio]{_main_files/figure-latex/plotSE-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={\label{fig:plotSE}Relazione tra Splitting index ed Effective Meshsize. Con i colori e le etichette di testo sono evidenziate le diverse classi geobotaniche.}]{_main_files/figure-latex/plotSE-1.pdf}}
 \caption{\label{fig:plotSE}Relazione tra Splitting index ed Effective Meshsize. Con i colori e le etichette di testo sono evidenziate le diverse classi geobotaniche.}
 \end{figure}
 
@@ -1981,6 +1988,6 @@ A seguire le slide delle presentazioni utilizzate durante gli eventi di dissemin
 
 \pandocbounded{\includegraphics[keepaspectratio]{./figs/Fauna2025/fauna2025.key 10.jpeg}}
 
-  \bibliography{references.bib}
+\bibliography{references.bib}
 
 \end{document}
